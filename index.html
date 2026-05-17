@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carbon-24 Clustering Dashboard</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Plotly -->
+    <script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
+
+    <!-- PapaParse for CSV -->
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div>
+        <h1>Carbon-24 Clustering Dashboard</h1>
+        <p>
+          Trực quan hóa kết quả phân nhóm các dạng thù hình Carbon dựa trên đặc
+          trưng hình học ô đơn vị và mức ổn định năng lượng.
+        </p>
+      </div>
+    </header>
+
+    <main class="layout">
+      <aside class="sidebar">
+        <h2>Điều khiển</h2>
+
+        <div class="control-group">
+          <label>Upload CSV khác</label>
+          <input type="file" id="csvUpload" accept=".csv" />
+          <small
+            >Nếu không upload, dashboard dùng file trong thư mục data/.</small
+          >
+        </div>
+        <div class="control-group">
+          <label for="algorithmSelect">Thuật toán</label>
+          <select id="algorithmSelect"></select>
+        </div>
+        <div class="control-group">
+          <label for="colorBy">Tô màu PCA theo</label>
+          <select id="colorBy"></select>
+        </div>
+
+        <div class="control-group">
+          <label>Cluster</label>
+          <div id="clusterCheckboxes" class="checkbox-list"></div>
+        </div>
+
+        <div class="control-group">
+          <label for="energyMax">Max relative energy (meV)</label>
+          <input type="number" id="energyMax" step="1" />
+        </div>
+
+        <div class="control-group">
+          <label for="densityMin">Min density</label>
+          <input type="number" id="densityMin" step="0.01" />
+        </div>
+
+        <button id="resetBtn" class="btn">Reset filter</button>
+        <button id="downloadBtn" class="btn secondary">
+          Download filtered CSV
+        </button>
+
+        <div class="status-box">
+          <p><b>Status:</b></p>
+          <p id="statusText">Đang tải dữ liệu...</p>
+        </div>
+      </aside>
+
+      <section class="content">
+        <section class="cards">
+          <div class="card">
+            <h3>Số cấu trúc</h3>
+            <p id="numStructures">-</p>
+          </div>
+
+          <div class="card">
+            <h3>Số cluster</h3>
+            <p id="numClusters">-</p>
+          </div>
+
+          <div class="card">
+            <h3>Energy TB</h3>
+            <p id="meanEnergy">-</p>
+          </div>
+
+          <div class="card">
+            <h3>Density TB</h3>
+            <p id="meanDensity">-</p>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h2>PCA Scatter Plot</h2>
+          <div id="pcaPlot" class="plot"></div>
+        </section>
+        <section class="panel">
+          <h2>PCA 3D Scatter Plot</h2>
+          <div id="pca3DPlot" class="plot"></div>
+        </section>
+        <section class="grid-2">
+          <div class="panel">
+            <h2>Relative Energy by Cluster</h2>
+            <div id="energyBoxPlot" class="plot small-plot"></div>
+          </div>
+
+          <div class="panel">
+            <h2>Density vs Relative Energy</h2>
+            <div id="densityEnergyPlot" class="plot small-plot"></div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h2>Structural Feature by Cluster</h2>
+          <div class="inline-control">
+            <label for="featureBoxSelect">Chọn feature:</label>
+            <select id="featureBoxSelect"></select>
+          </div>
+          <div id="featureBoxPlot" class="plot small-plot"></div>
+        </section>
+
+        <section class="panel">
+          <h2>Cluster Profile</h2>
+          <div id="clusterProfile"></div>
+        </section>
+
+        <section class="panel">
+          <h2>Bảng dữ liệu</h2>
+          <p class="note">Hiển thị tối đa 300 dòng đầu sau khi lọc.</p>
+          <div class="table-wrapper">
+            <table id="dataTable">
+              <thead></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer">
+      Carbon-24 Clustering Dashboard — HTML/CSS/JavaScript
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
