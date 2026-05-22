@@ -1,9 +1,16 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import plotly.express as px
-import plotly.graph_objects as go
-from plotly.subplots import make_subplots
+try:
+    import plotly.express as px
+    import plotly.graph_objects as go
+    from plotly.subplots import make_subplots
+except ModuleNotFoundError as e:
+    st.error(
+        "Missing dependency: plotly. On Streamlit Cloud, make sure `requirements.txt` "
+        "is committed at the repository root and contains `plotly>=5.18.0`, then reboot the app."
+    )
+    st.stop()
 from sklearn.preprocessing import MinMaxScaler
 import streamlit.components.v1 as components
 import json
