@@ -1,0 +1,13 @@
+model,MAE,RMSE,R2,source_file
+ExtraTrees,0.0097105876976159,0.0196225185679602,0.9793072848914346,outputs\extra_trees\extra_trees_results.csv
+ExtraTrees,0.0097105876976159,0.0196225185679602,0.9793072848914346,outputs\extra_trees\extra_trees_results.csv
+ExtraTrees,0.0097105876976159,0.0196225185679602,0.9793072848914346,outputs\extra_trees\extra_trees_results.csv
+RandomForest,0.0112745563718536,0.0218217145969142,0.9744090903257376,outputs\random_forest\random_forest_results.csv
+RandomForest,0.0112745563718536,0.0218217145969142,0.9744090903257376,outputs\random_forest\random_forest_results.csv
+RandomForest,0.0112745563718536,0.0218217145969142,0.9744090903257376,outputs\random_forest\random_forest_results.csv
+XGBoost,0.01466125356189,0.0239506763924809,0.9691721280170448,outputs\xgboost\xgboost_results.csv
+XGBoost,0.01466125356189,0.0239506763924809,0.9691721280170448,outputs\xgboost\xgboost_results.csv
+XGBoost,0.01466125356189,0.0239506763924809,0.9691721280170448,outputs\xgboost\xgboost_results.csv
+PyTorch_MLP,0.0233874350306632,0.031816277613858,0.9455990209142816,outputs\pytorch_mlp\pytorch_mlp_results.csv
+PyTorch_MLP,0.0233874350306632,0.031816277613858,0.9455990209142816,outputs\pytorch_mlp\pytorch_mlp_results.csv
+PyTorch_MLP,0.0233874350306632,0.031816277613858,0.9455990209142816,outputs\pytorch_mlp\pytorch_mlp_results.csv

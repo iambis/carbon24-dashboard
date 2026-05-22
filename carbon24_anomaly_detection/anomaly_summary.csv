@@ -1,0 +1,6 @@
+Phương pháp,N anomaly,Energy anomaly (mean),Energy normal (mean),Chênh lệch (eV/atom),Diễn giải
+HDBSCAN Noise,786,0.3743,0.3008,+0.0735,↑ kém ổn định hơn
+Low Probability,800,0.3725,0.3008,+0.0716,↑ kém ổn định hơn
+Isolation Forest,782,0.3441,0.3033,+0.0407,↑ kém ổn định hơn
+Consensus (≥2),799,0.3727,0.3008,+0.0719,↑ kém ổn định hơn
+All 3 methods,388,0.3777,0.3036,+0.0741,↑ kém ổn định hơn

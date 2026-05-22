@@ -1,0 +1,22 @@
+{
+  "optimal_k": 3,
+  "n_samples": 10153,
+  "n_features": 22,
+  "sample_size_for_silhouette": 5000,
+  "metrics": {
+    "silhouette_score": 0.24791715157696562,
+    "davies_bouldin_index": 1.507605489669814,
+    "calinski_harabasz_index": 2444.863532042974,
+    "inertia": 143893.03348248737
+  },
+  "cluster_sizes": {
+    "0": 3402,
+    "1": 2228,
+    "2": 4523
+  },
+  "pca_variance_explained": {
+    "pc1": 0.24568278403213004,
+    "pc2": 0.15382578825686544,
+    "total": 0.3995085722889955
+  }
+}

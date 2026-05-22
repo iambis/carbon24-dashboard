@@ -286,16 +286,34 @@ with st.sidebar:
 # Load data
 @st.cache_data
 def load_data():
-    try:
-        # Try to load clustered data
-        df = pd.read_csv('carbon24_kmeans_results/carbon24_clustered.csv')
-        has_clusters = True
-    except:
-        # Fallback to preprocessed data
-        df = pd.read_csv('carbon24_preprocessing_results/carbon24_feature_selected.csv')
-        has_clusters = False
-    
-    return df, has_clusters
+    candidates = [
+        ('carbon24_kmeans_results/carbon24_clustered.csv', True),
+        ('carbon24_preprocessing_results/carbon24_feature_selected.csv', False),
+        ('carbon24_pipeline_results/pipeline_final.csv', False),
+        ('carbon24_pipeline_results/tier3_gmm_labeled.csv', False),
+        ('data/regression/features_with_targets.csv', False),
+    ]
+
+    missing = []
+    for path, has_clusters in candidates:
+        if not os.path.exists(path):
+            missing.append(path)
+            continue
+        try:
+            return pd.read_csv(path), has_clusters
+        except Exception as e:
+            missing.append(f"{path} ({e})")
+
+    st.error("Khong tim thay file du lieu CSV can thiet de khoi dong dashboard.")
+    st.info(
+        "Khi deploy Streamlit Cloud, hay commit/push cac thu muc du lieu nhu "
+        "`carbon24_kmeans_results/`, `carbon24_preprocessing_results/`, "
+        "`carbon24_pipeline_results/` hoac `data/regression/` len GitHub."
+    )
+    with st.expander("Danh sach file da thu load"):
+        st.write(missing)
+
+    return pd.DataFrame(), False
 
 @st.cache_data
 def load_feature_info():

@@ -1,0 +1,88 @@
+
+================================================================================
+CARBON-24 STABILITY ANALYSIS & ENERGY PREDICTION - SUMMARY REPORT
+================================================================================
+
+DATASET INFORMATION:
+-------------------
+Total structures: 10153
+Features used: 21
+Optimal clusters: 3
+
+STABILITY CLASSIFICATION:
+------------------------
+
+Cluster 0: Highly Stable
+  - Structures: 3409 (33.6%)
+  - Mean relative energy: -0.4725 eV/atom
+  - Median relative energy: -0.4371 eV/atom
+Cluster 1: Highly Stable
+  - Structures: 2229 (22.0%)
+  - Mean relative energy: -0.3771 eV/atom
+  - Median relative energy: -1.1366 eV/atom
+Cluster 2: Less Stable
+  - Structures: 4515 (44.5%)
+  - Mean relative energy: 0.5429 eV/atom
+  - Median relative energy: 0.6060 eV/atom
+
+ENERGY PREDICTION MODELS:
+-------------------------
+Best Model: Random Forest
+  - Test R²: 1.0000
+  - Test MAE: 0.0014 eV/atom
+  - Test RMSE: 0.0026 eV/atom
+
+All Models Performance:
+
+Random Forest:
+  - Test R²: 1.0000
+  - Test MAE: 0.0014 eV/atom
+  - Test RMSE: 0.0026 eV/atom
+Gradient Boosting:
+  - Test R²: 1.0000
+  - Test MAE: 0.0042 eV/atom
+  - Test RMSE: 0.0055 eV/atom
+Ridge Regression:
+  - Test R²: 0.8988
+  - Test MAE: 1.5101 eV/atom
+  - Test RMSE: 1.8065 eV/atom
+Lasso Regression:
+  - Test R²: 0.8297
+  - Test MAE: 2.1678 eV/atom
+  - Test RMSE: 2.3428 eV/atom
+
+TOP 5 MOST IMPORTANT FEATURES:
+------------------------------
+
+1. num_atoms: 1.0000
+13. bond_length_range: 0.0000
+20. bond_complexity: 0.0000
+18. volume_ratio: 0.0000
+11. min_bond_length: 0.0000
+
+KEY FINDINGS:
+------------
+1. Structures are grouped into 3 distinct clusters based on geometric features
+2. Stability varies significantly across clusters:
+   - Most stable cluster has mean relative energy: -0.4725 eV/atom
+   - Least stable cluster has mean relative energy: 0.5429 eV/atom
+3. Energy prediction achieves R² = 1.0000 using Random Forest
+4. Geometric features successfully predict energy with MAE = 0.0014 eV/atom
+
+OUTPUT FILES:
+------------
+📁 carbon24_stability_analysis/
+  ├── cluster_stability_classification.csv
+  ├── prediction_model_comparison.csv
+  ├── best_model_predictions.csv
+  ├── feature_importance.csv (if applicable)
+  └── figures/
+      ├── stability_analysis_overview.png
+      ├── cluster_stability_details.png
+      ├── feature_importance.png (if applicable)
+      ├── prediction_error_analysis.png
+      └── pca_stability_visualization.png
+
+================================================================================
+Analysis completed successfully!
+================================================================================

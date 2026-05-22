@@ -1,0 +1,2 @@
+method,best_feature_set,best_k,n_samples,n_features,inertia,silhouette,davies_bouldin,calinski_harabasz
+KMeans,geometry_only,3,10153,21,139794.52353629394,0.24301201309425816,1.6064066617246457,2665.3316498236436

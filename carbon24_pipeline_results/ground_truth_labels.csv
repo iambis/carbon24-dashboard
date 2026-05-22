@@ -1,0 +1,11 @@
+gmm_cluster,kmeans_macro,n,energy_mean,top_crystal_system,top_space_group,best_match,match_score,electronic_pred,ref_n_cs_match,ref_e_min,ref_e_max,ref_band_gap_mean,scientific_label,description
+0,Trung gian,576,0.3613,triclinic,P-1,Amorphous/Complex,1.0,Likely Semi-metal,4,0.9346,1.4105,0.0645,Amorphous/Complex (triclinic),"Disordered, mixed coordination, high energy"
+1,Phuc tap (High Energy),638,0.4004,monoclinic,C2/m,Amorphous/Complex,0.65,Likely Semiconductor,8,0.0,1.5012,1.0775,Amorphous/Complex (monoclinic),"Disordered, mixed coordination, high energy"
+2,Ben vung (Low Energy),664,0.3248,triclinic,P1,Amorphous/Complex,0.6,Likely Semi-metal,4,0.9346,1.4105,0.0645,Amorphous/Complex (triclinic),"Disordered, mixed coordination, high energy"
+3,Phuc tap (High Energy),787,0.3336,monoclinic,C2/m,Fullerene-like,0.4,Likely Semiconductor,8,0.0,1.5012,1.0775,Fullerene-like (monoclinic),Cage-like sp2 structures
+4,Ben vung (Low Energy),909,0.2851,monoclinic,C2/m,Fullerene-like,0.4,Likely Semiconductor,8,0.0,1.5012,1.0775,Fullerene-like (monoclinic),Cage-like sp2 structures
+5,Trung gian,845,0.1045,monoclinic,C2/m,Graphite,0.65,Likely Semiconductor,8,0.0,1.5012,1.0775,Graphite (monoclinic),"sp2 hybridization, layered, semi-metal/conductor"
+6,Phuc tap (High Energy),1075,0.3933,triclinic,P1,Amorphous/Complex,1.0,Likely Semi-metal,4,0.9346,1.4105,0.0645,Amorphous/Complex (triclinic),"Disordered, mixed coordination, high energy"
+7,Ben vung (Low Energy),1677,0.1825,monoclinic,C2/m,Graphene-like,0.5,Likely Semiconductor,8,0.0,1.5012,1.0775,Graphene-like (monoclinic),2D sp2 carbon layers
+8,Trung gian,780,0.3383,triclinic,P-1,Amorphous/Complex,0.6,Likely Semi-metal,4,0.9346,1.4105,0.0645,Amorphous/Complex (triclinic),"Disordered, mixed coordination, high energy"
+9,Phuc tap (High Energy),1416,0.3781,monoclinic,C2/m,Amorphous/Complex,0.65,Likely Semiconductor,8,0.0,1.5012,1.0775,Amorphous/Complex (monoclinic),"Disordered, mixed coordination, high energy"

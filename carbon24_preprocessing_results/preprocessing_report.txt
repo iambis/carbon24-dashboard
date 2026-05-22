@@ -1,0 +1,68 @@
+================================================================================
+CARBON-24 PREPROCESSING REPORT
+================================================================================
+
+Original dataset: (10153, 41)
+Cleaned dataset: (10153, 41)
+Engineered dataset: (10153, 45)
+
+Missing Values: None
+Duplicate Rows: 0
+
+Outlier Summary:
+              Feature  IQR_Outliers IQR_Percentage  ZScore_Outliers ZScore_Percentage
+0     volume_per_atom             1          0.01%               17             0.17%
+1             density             0          0.00%                0             0.00%
+2    mean_bond_length             0          0.00%                0             0.00%
+3   mean_coordination             0          0.00%                0             0.00%
+4     relative_energy             0          0.00%                0             0.00%
+5  lattice_anisotropy           178          1.75%               75             0.74%
+6           angle_std           120          1.18%               50             0.49%
+7    packing_fraction             0          0.00%                0             0.00%
+
+High Correlation Pairs:
+            Feature 1           Feature 2  Correlation
+14            density    packing_fraction     1.000000
+33             energy     relative_energy     1.000000
+30       fraction_sp2        fraction_sp3    -0.999674
+26  mean_coordination        fraction_sp3     0.999343
+25  mean_coordination        fraction_sp2    -0.999031
+9     volume_per_atom    packing_fraction    -0.996373
+4     volume_per_atom             density    -0.996373
+16   mean_bond_length   mean_coordination     0.986106
+19   mean_bond_length        fraction_sp3     0.985524
+18   mean_bond_length        fraction_sp2    -0.985370
+15           c_over_a  lattice_anisotropy     0.962633
+0           num_atoms              volume     0.962306
+21    std_bond_length   bond_length_range     0.935963
+2                   c            c_over_a     0.916405
+5     volume_per_atom    mean_bond_length    -0.911583
+20   mean_bond_length    packing_fraction     0.904089
+10            density    mean_bond_length     0.904089
+6     volume_per_atom   mean_coordination    -0.901101
+8     volume_per_atom        fraction_sp3    -0.900477
+7     volume_per_atom        fraction_sp2     0.899465
+27  mean_coordination    packing_fraction     0.899415
+11            density   mean_coordination     0.899415
+32       fraction_sp3    packing_fraction     0.899051
+13            density        fraction_sp3     0.899051
+12            density        fraction_sp2    -0.898269
+31       fraction_sp2    packing_fraction    -0.898269
+3                   c  lattice_anisotropy     0.891678
+1                   b            b_over_a     0.885124
+22    min_bond_length    min_coordination     0.861462
+17   mean_bond_length    max_coordination     0.853552
+24  mean_coordination    max_coordination     0.813535
+28   max_coordination        fraction_sp2    -0.812843
+29   max_coordination        fraction_sp3     0.811341
+23    max_bond_length    max_coordination     0.802514
+
+New Engineered Features:
+  - volume_ratio
+  - lattice_asymmetry
+  - bond_complexity
+  - hybridization_diversity
+
+Normalization Methods Applied:
+  - StandardScaler (Z-score)
+  - RobustScaler (median and IQR)

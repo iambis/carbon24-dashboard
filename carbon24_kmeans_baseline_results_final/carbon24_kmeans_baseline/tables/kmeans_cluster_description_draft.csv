@@ -1,0 +1,4 @@
+cluster_kmeans,n_samples,description_en,description_vi
+0,3440,"higher-density, compact volume/atom, higher coordination, lower-than-average energy","Cụm có higher-density, compact volume/atom, higher coordination, lower-than-average energy"
+1,4470,"higher-density, compact volume/atom, higher coordination, higher-than-average energy","Cụm có higher-density, compact volume/atom, higher coordination, higher-than-average energy"
+2,2243,"lower-density, large volume/atom, lower coordination, lower-than-average energy","Cụm có lower-density, large volume/atom, lower coordination, lower-than-average energy"

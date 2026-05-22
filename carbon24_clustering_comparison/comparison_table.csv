@@ -1,0 +1,4 @@
+Method,Silhouette ↑,Davies-Bouldin ↓,Calinski-Harabasz ↑,Clusters,Time (s)
+K-means,0.2502,1.5076,2444.86,3,2.71
+GMM,0.2513,1.5236,2418.26,3,0.92
+Hierarchical,0.2496,1.5477,2361.69,3,3.84

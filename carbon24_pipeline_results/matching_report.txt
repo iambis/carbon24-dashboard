@@ -1,0 +1,115 @@
+=================================================================
+CARBON-24 CLUSTER SCIENTIFIC LABELING REPORT
+Reference: Materials Project (64 Carbon structures)
+=================================================================
+
+K-MEANS MACRO-CLUSTERS:
+  Cluster 0 (Trung gian):
+    N = 2,201
+    Energy mean = 0.2546 eV/atom
+    Best match  = Amorphous/Complex (score=0.6)
+    Description = Disordered, mixed coordination, high energy
+
+  Cluster 1 (Phuc tap (High Energy)):
+    N = 3,953
+    Energy mean = 0.3766 eV/atom
+    Best match  = Amorphous/Complex (score=0.65)
+    Description = Disordered, mixed coordination, high energy
+
+  Cluster 2 (Ben vung (Low Energy)):
+    N = 3,213
+    Energy mean = 0.2392 eV/atom
+    Best match  = Fullerene-like (score=0.4)
+    Description = Cage-like sp2 structures
+
+
+GMM MICRO-CLUSTERS:
+  GMM-0 [Trung gian]:
+    N = 576
+    Energy mean = 0.3613 eV/atom
+    Scientific label = Amorphous/Complex (triclinic)
+    Electronic pred  = Likely Semi-metal
+    MP reference CS  = 4 samples
+
+  GMM-1 [Phuc tap (High Energy)]:
+    N = 638
+    Energy mean = 0.4004 eV/atom
+    Scientific label = Amorphous/Complex (monoclinic)
+    Electronic pred  = Likely Semiconductor
+    MP reference CS  = 8 samples
+
+  GMM-2 [Ben vung (Low Energy)]:
+    N = 664
+    Energy mean = 0.3248 eV/atom
+    Scientific label = Amorphous/Complex (triclinic)
+    Electronic pred  = Likely Semi-metal
+    MP reference CS  = 4 samples
+
+  GMM-3 [Phuc tap (High Energy)]:
+    N = 787
+    Energy mean = 0.3336 eV/atom
+    Scientific label = Fullerene-like (monoclinic)
+    Electronic pred  = Likely Semiconductor
+    MP reference CS  = 8 samples
+
+  GMM-4 [Ben vung (Low Energy)]:
+    N = 909
+    Energy mean = 0.2851 eV/atom
+    Scientific label = Fullerene-like (monoclinic)
+    Electronic pred  = Likely Semiconductor
+    MP reference CS  = 8 samples
+
+  GMM-5 [Trung gian]:
+    N = 845
+    Energy mean = 0.1045 eV/atom
+    Scientific label = Graphite (monoclinic)
+    Electronic pred  = Likely Semiconductor
+    MP reference CS  = 8 samples
+
+  GMM-6 [Phuc tap (High Energy)]:
+    N = 1,075
+    Energy mean = 0.3933 eV/atom
+    Scientific label = Amorphous/Complex (triclinic)
+    Electronic pred  = Likely Semi-metal
+    MP reference CS  = 4 samples
+
+  GMM-7 [Ben vung (Low Energy)]:
+    N = 1,677
+    Energy mean = 0.1825 eV/atom
+    Scientific label = Graphene-like (monoclinic)
+    Electronic pred  = Likely Semiconductor
+    MP reference CS  = 8 samples
+
+  GMM-8 [Trung gian]:
+    N = 780
+    Energy mean = 0.3383 eV/atom
+    Scientific label = Amorphous/Complex (triclinic)
+    Electronic pred  = Likely Semi-metal
+    MP reference CS  = 4 samples
+
+  GMM-9 [Phuc tap (High Energy)]:
+    N = 1,416
+    Energy mean = 0.3781 eV/atom
+    Scientific label = Amorphous/Complex (monoclinic)
+    Electronic pred  = Likely Semiconductor
+    MP reference CS  = 8 samples
+
+
+STABLE STRUCTURES (E_above_hull < 0.05 eV/atom) IN REFERENCE:
+  mp-3347313      Monoclinic      C2/m         E=0.0000  BG=1.3762  Metal=False
+  mp-632329       Monoclinic      C2/m         E=0.0141  BG=0.0000  Metal=True
+  mp-990424       Trigonal        P-3m1        E=0.0089  BG=0.0124  Metal=False
+  mp-169          Trigonal        R-3m         E=0.0008  BG=0.0946  Metal=False
+  mp-2516584      Trigonal        R-3m         E=0.0023  BG=1.4276  Metal=False
+  mp-569304       Trigonal        R-3m         E=0.0091  BG=0.0148  Metal=False
+  mp-569416       Trigonal        R-3m         E=0.0021  BG=0.1056  Metal=False
+  mp-1040425      Hexagonal       P6/mmm       E=0.0176  BG=0.0001  Metal=False
+  mp-2049878      Hexagonal       P6/mmm       E=0.0129  BG=1.6210  Metal=False
+  mp-568806       Hexagonal       P6/mmm       E=0.0119  BG=0.0000  Metal=True
+  mp-990448       Hexagonal       P6/mmm       E=0.0131  BG=0.0001  Metal=False
+  mp-48           Hexagonal       P6_3/mmc     E=0.0031  BG=0.0000  Metal=True
+  mp-606949       Hexagonal       P6_3/mmc     E=0.0061  BG=0.0000  Metal=True
+  mp-997182       Hexagonal       P6_3/mmc     E=0.0144  BG=0.0001  Metal=False
+  mp-568286       Orthorhombic    Cmme         E=0.0082  BG=0.0000  Metal=True
+  mp-568363       Orthorhombic    Cmme         E=0.0083  BG=0.0000  Metal=True
+  mp-937760       Orthorhombic    Fmmm         E=0.0061  BG=0.0000  Metal=True

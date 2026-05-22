@@ -1,0 +1,14 @@
+level,cluster_id,original_label,scientific_name,best_match,match_score,n,energy_mean,description
+K-means,0,Trung gian,Amorphous/Complex-like Phase (Trung gian),Amorphous/Complex,0.6,2201,0.2546,"Disordered, mixed coordination, high energy"
+K-means,1,Phuc tap (High Energy),Amorphous/Complex-like Phase (Phuc tap (High Energy)),Amorphous/Complex,0.65,3953,0.3766,"Disordered, mixed coordination, high energy"
+K-means,2,Ben vung (Low Energy),Fullerene-like-like Phase (Ben vung (Low Energy)),Fullerene-like,0.4,3213,0.2392,Cage-like sp2 structures
+GMM,0,Trung gian,Amorphous/Complex (triclinic),Amorphous/Complex,1.0,576,0.3613,"Disordered, mixed coordination, high energy"
+GMM,1,Phuc tap (High Energy),Amorphous/Complex (monoclinic),Amorphous/Complex,0.65,638,0.4004,"Disordered, mixed coordination, high energy"
+GMM,2,Ben vung (Low Energy),Amorphous/Complex (triclinic),Amorphous/Complex,0.6,664,0.3248,"Disordered, mixed coordination, high energy"
+GMM,3,Phuc tap (High Energy),Fullerene-like (monoclinic),Fullerene-like,0.4,787,0.3336,Cage-like sp2 structures
+GMM,4,Ben vung (Low Energy),Fullerene-like (monoclinic),Fullerene-like,0.4,909,0.2851,Cage-like sp2 structures
+GMM,5,Trung gian,Graphite (monoclinic),Graphite,0.65,845,0.1045,"sp2 hybridization, layered, semi-metal/conductor"
+GMM,6,Phuc tap (High Energy),Amorphous/Complex (triclinic),Amorphous/Complex,1.0,1075,0.3933,"Disordered, mixed coordination, high energy"
+GMM,7,Ben vung (Low Energy),Graphene-like (monoclinic),Graphene-like,0.5,1677,0.1825,2D sp2 carbon layers
+GMM,8,Trung gian,Amorphous/Complex (triclinic),Amorphous/Complex,0.6,780,0.3383,"Disordered, mixed coordination, high energy"
+GMM,9,Phuc tap (High Energy),Amorphous/Complex (monoclinic),Amorphous/Complex,0.65,1416,0.3781,"Disordered, mixed coordination, high energy"

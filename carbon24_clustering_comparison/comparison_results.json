@@ -1,0 +1,27 @@
+{
+  "winner": "K-means",
+  "n_clusters": 3,
+  "methods": {
+    "K-means": {
+      "silhouette_score": 0.2501950461805194,
+      "davies_bouldin_index": 1.507605489669814,
+      "calinski_harabasz_score": 2444.863532042974,
+      "n_clusters": 3,
+      "execution_time": 2.7087807655334473
+    },
+    "GMM": {
+      "silhouette_score": 0.2512840851867806,
+      "davies_bouldin_index": 1.5236228221082253,
+      "calinski_harabasz_score": 2418.2556591914595,
+      "n_clusters": 3,
+      "execution_time": 0.916001558303833
+    },
+    "Hierarchical": {
+      "silhouette_score": 0.24955031131562477,
+      "davies_bouldin_index": 1.5476858045080215,
+      "calinski_harabasz_score": 2361.694041377902,
+      "n_clusters": 3,
+      "execution_time": 3.840927839279175
+    }
+  }
+}

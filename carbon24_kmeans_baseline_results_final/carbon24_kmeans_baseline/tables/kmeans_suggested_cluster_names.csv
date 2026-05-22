@@ -1,0 +1,4 @@
+cluster_kmeans,suggested_cluster_name
+0,dense-stable-high-coordination
+1,dense-metastable-high-coordination
+2,open-stable-low-coordination
