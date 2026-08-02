@@ -5,4 +5,4 @@ echo ========================================
 echo.
 echo Starting Streamlit dashboard...
 echo.
-streamlit run carbon24_dashboard.py
+streamlit run scripts\carbon24_interactive_dashboard.py

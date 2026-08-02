@@ -42,7 +42,7 @@ This project analyzes 10,153 Carbon-24 allotrope structures to:
 ### 1. Demo (30 seconds)
 
 ```bash
-python demo_stability_analysis.py
+python scripts/carbon24-stability-analysis.py
 ```
 
 See instant results:
@@ -53,7 +53,7 @@ See instant results:
 ### 2. Full Analysis (20 seconds)
 
 ```bash
-python carbon24-stability-analysis.py
+python scripts/carbon24-stability-analysis.py
 ```
 
 Generates:
@@ -64,7 +64,7 @@ Generates:
 ### 3. Interactive Dashboard
 
 ```bash
-streamlit run carbon24_interactive_dashboard.py
+streamlit run scripts/carbon24_interactive_dashboard.py
 ```
 
 Opens at: **http://localhost:8501**
@@ -109,9 +109,8 @@ Opens at: **http://localhost:8501**
 ```
 📦 Carbon-24 Project
 │
-├── 🔬 Analysis Scripts
+├── 📁 scripts/
 │   ├── carbon24-stability-analysis.py      # Main analysis
-│   ├── demo_stability_analysis.py          # Quick demo
 │   ├── generate_pdf_report.py              # PDF generator
 │   └── carbon24_interactive_dashboard.py   # Streamlit app
 │
@@ -129,13 +128,13 @@ Opens at: **http://localhost:8501**
 │       ├── prediction_error_analysis.png
 │       └── pca_stability_visualization.png
 │
-└── 📚 Documentation
-    ├── README.md (This file)
+├── 📁 docs/
     ├── INDEX.md (Documentation index)
     ├── GETTING_STARTED.md (Quick start guide)
     ├── README_STABILITY_ANALYSIS.md (Quick reference)
-    ├── HUONG_DAN_STABILITY_ANALYSIS.md (Detailed guide - Vietnamese)
-    └── PROJECT_SUMMARY.md (Complete summary)
+    └── HUONG_DAN_STABILITY_ANALYSIS.md (Detailed guide - Vietnamese)
+│
+└── 📚 README.md (This file)
 ```
 
 ---
@@ -365,7 +364,7 @@ cat carbon24_stability_analysis/ANALYSIS_REPORT.txt
 
 ```bash
 python demo_stability_analysis.py
-streamlit run carbon24_interactive_dashboard.py
+streamlit run scripts/carbon24_interactive_dashboard.py
 ```
 
 **Made with ❤️ for Materials Science Research**
