@@ -276,7 +276,6 @@ print(predictions.describe())
 
 ### Energy Prediction
 - **Models:** Random Forest, Gradient Boosting, Ridge, Lasso
-- **Best:** Random Forest (R² = 1.0000)
 - **Validation:** Train-test split (80-20)
 
 ### Feature Selection
@@ -325,18 +324,6 @@ Contributions are welcome! Please:
 3. Make your changes
 4. Submit a pull request
 
----
-
-## 📝 Citation
-
-```bibtex
-@software{carbon24_stability_analysis,
-  title = {Carbon-24 Stability Analysis and Energy Prediction},
-  author = {Your Name},
-  year = {2026},
-  note = {Dataset: 10,153 Carbon-24 structures}
-}
-```
 
 ---
 
@@ -362,11 +349,6 @@ cat carbon24_stability_analysis/ANALYSIS_REPORT.txt
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
----
 
 ## 🙏 Acknowledgments
 
