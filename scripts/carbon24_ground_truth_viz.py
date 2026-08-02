@@ -34,7 +34,7 @@ FIGS.mkdir(exist_ok=True)
 gmm    = pd.read_csv(OUT / "tier3_gmm_labeled.csv")
 labels = pd.read_csv(OUT / "ground_truth_labels.csv")
 sci    = pd.read_csv(OUT / "cluster_scientific_names.csv")
-ref    = pd.read_csv("carbon.csv").rename(columns={
+ref    = pd.read_csv("data/carbon.csv").rename(columns={
     "Crystal System":    "crystal_system",
     "Space Group Symbol":"space_group_symbol",
     "Energy Above Hull": "e_above_hull",

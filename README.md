@@ -1,374 +1,114 @@
-# 💎 Carbon-24 Stability Analysis & Energy Prediction
+# Carbon-24 Dashboard
 
-<div align="center">
+Dự án phân tích cấu trúc Carbon-24: tiền xử lý đặc trưng, phân cụm, phân tích độ ổn định, dự đoán năng lượng và trực quan hóa bằng Streamlit.
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-1.0+-orange.svg)
-![Streamlit](https://img.shields.io/badge/Streamlit-1.0+-red.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
+## Bắt đầu nhanh
 
-**Phân nhóm và hệ thống hóa các dạng thù hình Carbon**  
-**dựa trên đặc trưng hình học và mức ổn định năng lượng**
-
-[Quick Start](#-quick-start) •
-[Results](#-key-results) •
-[Documentation](#-documentation) •
-[Dashboard](#-interactive-dashboard)
-
-</div>
-
----
-
-## 🎯 Overview
-
-This project analyzes 10,153 Carbon-24 allotrope structures to:
-
-1. **Classify stability groups** based on energy levels
-2. **Predict energy_per_atom** using Machine Learning (R² = 1.0000)
-3. **Visualize results** with interactive dashboard and professional reports
-
-### Key Achievements
-
-✅ **3 distinct stability clusters** identified  
-✅ **99.99% prediction accuracy** (R² = 1.0000)  
-✅ **Interactive dashboard** with 5 analysis pages  
-✅ **Professional PDF reports** auto-generated  
-✅ **Complete documentation** (English + Vietnamese)  
-
----
-
-## 🚀 Quick Start
-
-### 1. Demo (30 seconds)
-
-```bash
-python scripts/carbon24-stability-analysis.py
-```
-
-See instant results:
-- Stability classification
-- Energy prediction performance
-- Top important features
-
-### 2. Full Analysis (20 seconds)
-
-```bash
-python scripts/carbon24-stability-analysis.py
-```
-
-Generates:
-- 4 CSV files with detailed results
-- 5 PNG visualizations
-- Complete analysis report
-
-### 3. Interactive Dashboard
-
-```bash
-streamlit run scripts/carbon24_interactive_dashboard.py
-```
-
-Opens at: **http://localhost:8501**
-
----
-
-## 📊 Key Results
-
-### ⚡ Stability Classification
-
-| Cluster | Stability | Structures | % | Mean Energy |
-|---------|-----------|------------|---|-------------|
-| 0 | 🟢 Highly Stable | 3,409 | 33.6% | -0.4725 eV/atom |
-| 1 | 🟢 Highly Stable | 2,229 | 22.0% | -0.3771 eV/atom |
-| 2 | 🔴 Less Stable | 4,515 | 44.5% | 0.5429 eV/atom |
-
-**Insight:** 55.5% of structures are highly stable
-
-### 🤖 Energy Prediction
-
-| Model | Test R² | Test MAE | Test RMSE |
-|-------|---------|----------|-----------|
-| **Random Forest** ⭐ | **1.0000** | **0.0014** | **0.0026** |
-| Gradient Boosting | 1.0000 | 0.0042 | 0.0055 |
-| Ridge Regression | 0.8988 | 1.5101 | 1.8065 |
-| Lasso Regression | 0.8297 | 2.1678 | 2.3428 |
-
-**Achievement:** Near-perfect prediction accuracy!
-
-### 🔍 Top 5 Important Features
-
-1. **num_atoms** (99.99%) - Number of atoms
-2. **bond_length_range** - Bond length variation
-3. **bond_complexity** - Structural complexity
-4. **volume_ratio** - Volume ratio
-5. **min_bond_length** - Minimum bond length
-
----
-
-## 📁 Project Structure
-
-```
-📦 Carbon-24 Project
-│
-├── 📁 scripts/
-│   ├── carbon24-stability-analysis.py      # Main analysis
-│   ├── generate_pdf_report.py              # PDF generator
-│   └── carbon24_interactive_dashboard.py   # Streamlit app
-│
-├── 📊 Results (carbon24_stability_analysis/)
-│   ├── cluster_stability_classification.csv
-│   ├── prediction_model_comparison.csv
-│   ├── best_model_predictions.csv
-│   ├── feature_importance.csv
-│   ├── ANALYSIS_REPORT.txt
-│   ├── Carbon24_Stability_Report_*.pdf
-│   └── figures/
-│       ├── stability_analysis_overview.png
-│       ├── cluster_stability_details.png
-│       ├── feature_importance.png
-│       ├── prediction_error_analysis.png
-│       └── pca_stability_visualization.png
-│
-├── 📁 docs/
-    ├── INDEX.md (Documentation index)
-    ├── GETTING_STARTED.md (Quick start guide)
-    ├── README_STABILITY_ANALYSIS.md (Quick reference)
-    └── HUONG_DAN_STABILITY_ANALYSIS.md (Detailed guide - Vietnamese)
-│
-└── 📚 README.md (This file)
-```
-
----
-
-## 🎨 Interactive Dashboard
-
-### Features
-
-- **📋 Overview** - Project summary and key metrics
-- **⚡ Stability Analysis** - Detailed stability classification
-- **🤖 Energy Prediction** - Model performance and predictions
-- **🔍 Cluster Explorer** - Interactive cluster exploration
-- **📊 Data Explorer** - Filter, search, and export data
-
-### Screenshots
-
-#### Overview Page
-- Key metrics dashboard
-- Quick visualizations
-- Summary statistics
-
-#### Stability Analysis
-- Energy distribution by cluster
-- Box plots comparison
-- Detailed statistics tables
-
-#### Energy Prediction
-- Model performance comparison
-- Actual vs Predicted plots
-- Error analysis
-- Feature importance
-
----
-
-## 📚 Documentation
-
-| Document | Description | Language | Length |
-|----------|-------------|----------|--------|
-| **[INDEX.md](INDEX.md)** | Documentation index | English | Quick |
-| **[GETTING_STARTED.md](GETTING_STARTED.md)** | Quick start guide | English | Short |
-| **[README_STABILITY_ANALYSIS.md](README_STABILITY_ANALYSIS.md)** | Quick reference | English | Medium |
-| **[HUONG_DAN_STABILITY_ANALYSIS.md](HUONG_DAN_STABILITY_ANALYSIS.md)** | Detailed guide | Vietnamese | Long |
-| **[PROJECT_SUMMARY.md](PROJECT_SUMMARY.md)** | Complete summary | English | Medium |
-
----
-
-## 🔧 Installation
-
-### Requirements
-
-```bash
-pip install pandas numpy matplotlib seaborn scikit-learn streamlit plotly
-```
-
-### Or use requirements.txt
+Từ thư mục gốc của dự án, cài các phụ thuộc:
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
-
-## 💡 Use Cases
-
-### 1. Material Discovery
-```python
-# Find most stable structures
-import pandas as pd
-df = pd.read_csv('carbon24_stability_analysis/cluster_stability_classification.csv')
-stable = df[df['stability'] == 'Highly Stable']
-print(stable)
-```
-
-### 2. Energy Prediction
-```python
-# Predict energy for new structures
-# (Model already trained in analysis script)
-# Use Random Forest model for predictions
-```
-
-### 3. Data Analysis
-```python
-# Analyze predictions
-predictions = pd.read_csv('carbon24_stability_analysis/best_model_predictions.csv')
-print(predictions.describe())
-```
-
----
-
-## 📊 Visualizations
-
-### Stability Analysis
-![Stability Overview](carbon24_stability_analysis/figures/stability_analysis_overview.png)
-
-### Cluster Details
-![Cluster Details](carbon24_stability_analysis/figures/cluster_stability_details.png)
-
-### Feature Importance
-![Feature Importance](carbon24_stability_analysis/figures/feature_importance.png)
-
-### Error Analysis
-![Error Analysis](carbon24_stability_analysis/figures/prediction_error_analysis.png)
-
-### PCA Visualization
-![PCA](carbon24_stability_analysis/figures/pca_stability_visualization.png)
-
----
-
-## 🎓 Key Insights
-
-### 1. Structure-Energy Relationships
-- Geometric features predict energy with near-perfect accuracy
-- **num_atoms** is the most critical factor (99.99% importance)
-- Strong correlation between structure and stability
-
-### 2. Stability Groups
-- **Highly Stable** (55.5%): Suitable for practical applications
-  - Clusters 0 & 1
-  - Mean energy: -0.47 to -0.38 eV/atom
-
-- **Less Stable** (44.5%): Higher energy structures
-  - Cluster 2
-  - Mean energy: 0.54 eV/atom
-
-### 3. Prediction Performance
-- Random Forest achieves near-perfect accuracy
-- MAE of only 0.0014 eV/atom
-- Reliable predictions for new structures
-
----
-
-## 🔬 Methodology
-
-### Clustering
-- **Method:** K-means (k=3)
-- **Features:** 21 geometric features
-- **Validation:** Silhouette, Davies-Bouldin, Calinski-Harabasz
-
-### Energy Prediction
-- **Models:** Random Forest, Gradient Boosting, Ridge, Lasso
-- **Validation:** Train-test split (80-20)
-
-### Feature Selection
-- **Original:** 45 features
-- **Selected:** 22 features
-- **Method:** Correlation-based removal
-
----
-
-## 📈 Performance
-
-| Task | Time | Output |
-|------|------|--------|
-| Demo | ~5s | Console output |
-| Full Analysis | ~20s | 4 CSVs + 5 PNGs + Report |
-| Dashboard | ~3s | Interactive web app |
-| PDF Report | ~10s | Professional PDF |
-
----
-
-## 🎯 Future Work
-
-### Short-term
-- [ ] Hyperparameter optimization
-- [ ] Cross-validation studies
-- [ ] Additional ML models
-
-### Medium-term
-- [ ] 3D structure visualization
-- [ ] Real-time prediction API
-- [ ] Web deployment
-
-### Long-term
-- [ ] Graph Neural Networks
-- [ ] Deep Learning models
-- [ ] DFT integration
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please:
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
-
----
-
-## 📞 Support
-
-### Quick Help
+Chạy dashboard:
 
 ```bash
-# Run demo
-python demo_stability_analysis.py
-
-# Check results
-ls carbon24_stability_analysis/
-
-# View report
-cat carbon24_stability_analysis/ANALYSIS_REPORT.txt
-```
-
-### Documentation
-- 📖 [INDEX.md](INDEX.md) - Documentation index
-- 🚀 [GETTING_STARTED.md](GETTING_STARTED.md) - Quick start
-- 📚 [HUONG_DAN_STABILITY_ANALYSIS.md](HUONG_DAN_STABILITY_ANALYSIS.md) - Full guide
-
----
-
-
-## 🙏 Acknowledgments
-
-- Carbon-24 dataset providers
-- scikit-learn community
-- Streamlit team
-- Open source contributors
-
----
-
-<div align="center">
-
-**🎉 Ready to explore Carbon-24 structures!**
-
-```bash
-python demo_stability_analysis.py
 streamlit run scripts/carbon24_interactive_dashboard.py
 ```
 
-**Made with ❤️ for Materials Science Research**
+Hoặc trên Windows, chạy `run_dashboard.bat`. Dashboard mở tại `http://localhost:8501`.
 
-[⬆ Back to Top](#-carbon-24-stability-analysis--energy-prediction)
+## Chạy phân tích độ ổn định
 
-</div>
+```bash
+python scripts/carbon24-stability-analysis.py
+```
+
+Script dùng dữ liệu đặc trưng đã có trong dự án và cập nhật các đầu ra trong `carbon24_stability_analysis/`:
+
+- `cluster_stability_classification.csv`
+- `prediction_model_comparison.csv`
+- `best_model_predictions.csv`
+- `feature_importance.csv`
+- `ANALYSIS_REPORT.txt`
+- `figures/` (các biểu đồ PNG)
+
+Để tạo báo cáo PDF từ các kết quả hiện có:
+
+```bash
+python scripts/generate_pdf_report.py
+```
+
+## Cấu trúc thư mục
+
+```text
+carbon24-dashboard/
+├── scripts/                         # Script Python chính
+│   ├── carbon24_interactive_dashboard.py
+│   ├── carbon24-stability-analysis.py
+│   ├── carbon24_anomaly_detection.py
+│   ├── carbon24_energy_prediction.py
+│   └── generate_pdf_report.py
+├── notebooks/                       # Notebook thử nghiệm và phân tích
+├── docs/                            # Hướng dẫn chi tiết
+├── data/                            # Dữ liệu đầu vào, gồm carbon.csv
+├── assets/images/                   # Ảnh minh họa và biểu đồ dùng lại
+├── archives/                        # Các gói ZIP lưu trữ
+├── web/                             # Giao diện HTML/CSS/JS tĩnh
+├── results/
+│   ├── csv/                         # Vị trí gom CSV khi cần xuất chung
+│   └── png/                         # Vị trí gom PNG khi cần xuất chung
+├── carbon24_stability_analysis/     # Kết quả phân tích độ ổn định
+├── carbon24_anomaly_detection/      # Kết quả phát hiện bất thường
+├── carbon24_energy_results/         # Kết quả dự đoán năng lượng
+├── carbon24_gmm_results/            # Kết quả GMM
+├── carbon24_kmeans_results/         # Kết quả K-means
+├── carbon24_hierarchical_baseline/  # Kết quả Hierarchical Clustering
+├── hdbscan_phuc/                    # Kết quả HDBSCAN
+├── requirements.txt
+├── requirements_dashboard.txt
+└── run_dashboard.bat
+```
+
+## Dữ liệu và kết quả
+
+Kết quả được lưu theo từng phương pháp để không trộn lẫn đầu ra:
+
+| Khu vực | Nội dung |
+| --- | --- |
+| `carbon24_stability_analysis/` | Phân loại độ ổn định, dự đoán năng lượng và biểu đồ liên quan |
+| `carbon24_anomaly_detection/` | Kết quả anomaly detection, bảng CSV và figures |
+| `carbon24_energy_results/` | So sánh mô hình, dự đoán và feature importance |
+| `carbon24_gmm_results/` | Kết quả, bảng và figures GMM |
+| `carbon24_kmeans_results/` | Dữ liệu và trực quan hóa K-means |
+| `carbon24_hierarchical_baseline/` | Bảng kết quả và figures Hierarchical |
+| `hdbscan_phuc/` | Dữ liệu và profile HDBSCAN |
+
+Thư mục `results/csv/` và `results/png/` là nơi dành cho việc gom các đầu ra đã chọn. Chúng không tự sao chép dữ liệu từ các thư mục kết quả chuyên biệt.
+
+## Tài liệu
+
+- [Mục lục tài liệu](docs/INDEX.md)
+- [Hướng dẫn bắt đầu](docs/GETTING_STARTED.md)
+- [Hướng dẫn phân tích độ ổn định](docs/HUONG_DAN_STABILITY_ANALYSIS.md)
+- [Hướng dẫn anomaly detection](docs/ANOMALY_DETECTION_GUIDE.md)
+
+Lưu ý: một số tài liệu cũ trong `docs/` có thể vẫn nêu tên script ở vị trí cũ; hãy ưu tiên các lệnh trong README này và dùng đường dẫn `scripts/...`.
+
+## Các script chính
+
+| Script | Mục đích |
+| --- | --- |
+| `scripts/carbon24_interactive_dashboard.py` | Dashboard Streamlit |
+| `scripts/carbon24-stability-analysis.py` | Phân tích độ ổn định và mô hình dự đoán |
+| `scripts/carbon24_anomaly_detection.py` | Phát hiện điểm bất thường |
+| `scripts/carbon24_energy_prediction.py` | Dự đoán năng lượng |
+| `scripts/carbon24_feature_selection.py` | Lựa chọn đặc trưng |
+| `scripts/carbon24_pipeline_3tier.py` | Pipeline phân tích ba tầng |
+| `scripts/prepare_cif_cache.py` | Tạo lại CIF cache khi cần cho chế độ xem 3D |
+
+## Lưu ý vận hành
+
+- Chạy lệnh từ thư mục gốc của dự án để các đường dẫn dữ liệu tương đối hoạt động đúng.
+- Dashboard cần các CSV hiện có trong các thư mục `carbon24_*`; hãy chạy các phân tích tương ứng nếu chúng bị thiếu.
+- File PDF và CIF cache không được lưu sẵn để giữ repository gọn nhẹ; chúng có thể được tạo lại bằng script phù hợp khi cần.

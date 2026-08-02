@@ -35,7 +35,7 @@ print("=" * 65)
 print("GROUND-TRUTH LABELING — Materials Project Reference")
 print("=" * 65)
 
-ref = pd.read_csv("carbon.csv")
+ref = pd.read_csv("data/carbon.csv")
 gmm = pd.read_csv(OUTPUT_DIR / "tier3_gmm_clean.csv")
 
 ref = ref.rename(columns={
@@ -431,7 +431,7 @@ print("=" * 65)
 print("GROUND-TRUTH LABELING — Materials Project Reference")
 print("=" * 65)
 
-ref = pd.read_csv("carbon.csv")
+ref = pd.read_csv("data/carbon.csv")
 gmm = pd.read_csv(OUTPUT_DIR / "tier3_gmm_clean.csv")
 
 # Chuan hoa ten cot
